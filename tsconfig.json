@@ -1,11 +1,10 @@
 {
   "display": "Node LTS",
   "_version": "18.1.0",
-  "extends": "ts-node/node16/tsconfig.json",
   "compilerOptions": {
     "lib": ["es2023"],
-    // "rootDir": "src",
-    // "outDir": "dist",
+    "rootDir": "src",
+    "outDir": "dist",
     "module": "node16",
     "target": "es2022",
     "strict": true,

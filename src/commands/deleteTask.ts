@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 import ora from "ora";
 
-export async function getTaskCode() {
+export async function getTaskId() {
   try {
     const answers = await inquirer.prompt([
       {
@@ -24,7 +24,7 @@ export async function getTaskCode() {
 
 export default async function deleteTask() {
   try {
-    const userCode = await getTaskCode();
+    const userCode = await getTaskId();
 
     const spinner = ora("Finding and Deleting the todo...").start();
 
@@ -47,4 +47,4 @@ export default async function deleteTask() {
   }
 }
 
-deleteTask();
+// deleteTask();

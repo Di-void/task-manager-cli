@@ -3,9 +3,10 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 import ora from "ora";
 
-const prisma = new PrismaClient();
-export type Todo = Promise<
-  Omit<Prisma.TodoCreateInput, "id" | "createdAt" | "updatedAt" | "status">
+export const prisma = new PrismaClient();
+export type Todo = Omit<
+  Prisma.TodoCreateInput,
+  "id" | "createdAt" | "updatedAt" | "status"
 >;
 
 export default async function addTask() {
@@ -32,7 +33,7 @@ export default async function addTask() {
   }
 }
 
-async function input(): Todo {
+async function input(): Promise<Todo> {
   const answers = await inquirer.prompt([
     { name: "name", message: "Enter the name of the task:", type: "input" },
     {

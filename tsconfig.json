@@ -1,16 +1,13 @@
 {
-  "display": "ESM",
   "_version": "18.1.0",
   "compilerOptions": {
     "lib": ["es2023"],
-    "rootDir": "src",
-    "outDir": "dist",
-    "module": "ESNext",
+    "module": "node16",
     "target": "es2022",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "Bundler"
+    "moduleResolution": "node16"
   }
 }

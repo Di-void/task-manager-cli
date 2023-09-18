@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "ts-node --esm ./src/commands/deleteTask.ts",
-    "build": "npx tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

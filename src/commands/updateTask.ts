@@ -103,5 +103,3 @@ export default async function updateTask() {
     process.exit(1);
   }
 }
-
-updateTask();

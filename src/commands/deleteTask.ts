@@ -46,5 +46,3 @@ export default async function deleteTask() {
     process.exit(1);
   }
 }
-
-// deleteTask();

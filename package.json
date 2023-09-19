@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "type": "module",
+  "bin": {
+    "task-manager": "./dist/index.js"
+  },
   "scripts": {
     "dev": "ts-node --esm ./src/commands/deleteTask.ts",
     "build": "tsc"
